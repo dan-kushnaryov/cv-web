@@ -1,11 +1,13 @@
 <!doctype html>
-<html class="scroll-smooth">
+<html lang="en" class="scroll-smooth">
 <head>
-    <title>Danil Kushnaryov - Senior Software Developer</title>
+    <title>Daniel Kushnaryov - Senior Software Developer</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Experienced backend developer specializing in Node.js, cloud solutions, and modern web technologies.">
     <meta name="robots" content="index, follow">
+    <meta name="author" content="Daniel Kushnaryov">
+    <meta name="theme-color" content="#18181b">
 
     <!-- Favicons -->
     <link rel="icon" href="./img/favicon.ico" type="image/x-icon">
@@ -17,29 +19,38 @@
     <!-- Font Optimization -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Nunito:wght@200..1000&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Nunito:wght@200..1000&display=swap" media="print" onload="this.media='all'">
     <noscript>
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Nunito:wght@200..1000&display=swap">
     </noscript>
 
     <!-- Open Graph Meta Tags -->
-    <meta property="og:title" content="Danil Kushnaryov - Senior Software Developer">
+    <meta property="og:title" content="Daniel Kushnaryov - Senior Software Developer">
     <meta property="og:description" content="Experienced backend developer specializing in Node.js, cloud solutions, and modern web technologies.">
-    <meta property="og:image" content="preview.jpg">
+    <meta property="og:image" content="https://dan-kushnaryov.github.io/cv-web-static/preview.jpg">
     <meta property="og:url" content="https://dan-kushnaryov.github.io/cv-web-static">
+    <meta property="og:type" content="website">
     <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Daniel Kushnaryov - Senior Software Developer">
+    <meta name="twitter:description" content="Experienced backend developer specializing in Node.js, cloud solutions, and modern web technologies.">
 
     <!-- Schema.org JSON-LD -->
     <script type="application/ld+json">
         {
             "@context": "https://schema.org",
             "@type": "Person",
-            "name": "Danil Kushnaryov",
+            "name": "Daniel Kushnaryov",
             "jobTitle": "Senior Software Developer",
+            "email": "dan.kushnaryov@gmail.com",
+            "url": "https://dan-kushnaryov.github.io/cv-web-static",
             "sameAs": [
                 "https://github.com/dan-kushnaryov",
                 "https://www.linkedin.com/in/danweb"
-            ]
+            ],
+            "address": {
+                "@type": "PostalAddress",
+                "addressCountry": "PL"
+            }
         }
     </script>
 
@@ -53,30 +64,7 @@
     </script>
 
     <!-- JS Optimization -->
-    <script defer>
-        document.addEventListener('DOMContentLoaded', () => {
-            const titleContainer = document.getElementById('title-container');
-            if (!titleContainer) return;
-
-            const isSmallScreen = window.matchMedia('(max-width: 768px)');
-
-            const toggleFixedPosition = () => {
-                if (!isSmallScreen.matches) return;
-                const scrollY = window.scrollY;
-                titleContainer.style.opacity = scrollY > 1000 ? 0 : 1;
-                titleContainer.classList.toggle('fixed-title-container', scrollY > 150);
-                titleContainer.classList.toggle('text-3xl', scrollY <= 150);
-            };
-
-            isSmallScreen.addEventListener('change', toggleFixedPosition);
-            window.addEventListener('scroll', toggleFixedPosition);
-
-            // Update experience dynamically
-            document.querySelectorAll("[data-experience]").forEach(el => el.textContent = new Date().getFullYear() - 2012);
-
-            document.documentElement.classList.add('loaded');
-        });
-    </script>
+    <script defer src="./main.js"></script>
 </head>
 <body class="font-body leading-relaxed text-gray-200 md:overflow-hidden dark">
 <div class="relative flex flex-col md:flex-row min-h-screen min-w-[350px] mx-auto">
@@ -87,11 +75,11 @@
             <div class="absolute inset-0 bg-gradient-to-tr from-cyan-950/0 to-sky-950/60"></div>
         </div>
         <!-- Content -->
-        <div class="relative md:scrollbar-thin md:crollbar-thumb-gray-900 md:scrollbar-track-transparent md:overflow-y-auto md:h-screen z-10 w-full px-6 py-4">
+        <div class="relative md:scrollbar-thin md:scrollbar-thumb-gray-900 md:scrollbar-track-transparent md:overflow-y-auto md:h-screen z-10 w-full px-6 py-4">
             <!-- Icons in the top-right corner -->
             <div class="absolute top-4 right-6 flex gap-3">
                 <!-- GitHub -->
-                <a href="https://github.com/dan-kushnaryov" aria-label="GitHub profile" role="button" target="_blank" class="hover:text-teal-500 transition">
+                <a href="https://github.com/dan-kushnaryov" aria-label="GitHub profile" target="_blank" rel="noopener noreferrer" class="hover:text-teal-500 transition">
                     <svg class="w-6 h-6 fill-current text-gray-400 hover:text-teal-500 transition-colors duration-500"
                          xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
                         <path fill-rule="evenodd"
@@ -100,7 +88,7 @@
                     </svg>
                 </a>
                 <!-- LinkedIn -->
-                <a href="https://www.linkedin.com/in/danweb" aria-label="LinkedIn profile" role="button" target="_blank"
+                <a href="https://www.linkedin.com/in/danweb" aria-label="LinkedIn profile" target="_blank" rel="noopener noreferrer"
                    class="hover:text-teal-500 transition">
                     <svg class="w-6 h-6 fill-current text-gray-400 hover:text-teal-500 transition-colors duration-500"
                          xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
@@ -113,11 +101,11 @@
                 <!-- Avatar -->
                 <div class="flex flex-col gap-4 items-start">
                     <div class="w-40 h-40 rounded-full flex items-center justify-center overflow-hidden border-4 border-white">
-                        <img src="./img/avatar.jpeg" alt="Danil Kushnarov" loading="lazy" class="transform scale-125">
+                        <img src="./img/avatar.jpeg" alt="Daniel Kushnaryov" loading="lazy" class="transform scale-125" width="160" height="160">
                     </div>
                     <div class="flex flex-row items-center gap-1.5 text-3xl transition-all duration-300"
                          id="title-container">
-                        <h1 class="text-white font-bold">Danil Kushnaryov</h1>
+                        <h1 class="text-white font-bold">Daniel Kushnaryov</h1>
                         <svg class="w-8 h-8" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
                             <g id="SVGRepo_iconCarrier">
@@ -146,7 +134,7 @@
                     <ul class="flex flex-col gap-2">
                         <li>
                             <a class="flex flex-row gap-2 items-center hover:text-teal-500 transition-colors duration-500"
-                               href="mailto:dan.kushnaryov@gmail.com" target="_blank">
+                               href="mailto:dan.kushnaryov@gmail.com">
                                 <svg class="w-5 h-5" viewBox="0 -2.5 20 20" version="1.1"
                                      xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
                                      fill="#000000">
@@ -171,7 +159,7 @@
                         </li>
                         <li>
                             <a class="flex flex-row items-center gap-2 hover:text-teal-500 transition-colors duration-500"
-                               href="https://t.me/dkush_web" target="_blank">
+                               href="https://t.me/dkush_web" target="_blank" rel="noopener noreferrer">
                                 <svg class="w-5 h-5" viewBox="0 0 100 100" version="1.1" xml:space="preserve"
                                      xmlns="http://www.w3.org/2000/svg"
                                      xmlns:xlink="http://www.w3.org/1999/xlink" fill="#000000">
@@ -502,6 +490,9 @@
                                         src="./img/companies/paydock_logo.jpeg"
                                         alt="Paydock Company"
                                         class="w-10 h-10 shadow-md border border-gray-700 object-cover"
+                                        loading="lazy"
+                                        width="40"
+                                        height="40"
                                 />
                             </div>
                             <div>
@@ -547,6 +538,9 @@
                                         src="./img/companies/softserve_logo.png"
                                         alt="SoftServe Company"
                                         class="w-10 h-10 shadow-md border border-gray-700 object-cover"
+                                        loading="lazy"
+                                        width="40"
+                                        height="40"
                                 />
                             </div>
                             <div class="flex-initial">
@@ -594,6 +588,9 @@
                                         src="./img/companies/mrc_develop_logo.jpeg"
                                         alt="MRC Develop Company"
                                         class="w-10 h-10 shadow-md border border-gray-700 object-cover"
+                                        loading="lazy"
+                                        width="40"
+                                        height="40"
                                 />
                             </div>
                             <div class="flex-initial">
@@ -633,6 +630,9 @@
                                         src="./img/companies/codetiburon_logo.jpeg"
                                         alt="CodeTiburon Company"
                                         class="w-10 h-10 shadow-md border border-gray-700 object-cover"
+                                        loading="lazy"
+                                        width="40"
+                                        height="40"
                                 />
                             </div>
                             <div class="flex-initial">
@@ -673,6 +673,9 @@
                                         src="./img/companies/polar_b_logo.jpeg"
                                         alt="Polar-B Company"
                                         class="w-10 h-10 shadow-md border border-gray-700 object-cover"
+                                        loading="lazy"
+                                        width="40"
+                                        height="40"
                                 />
                             </div>
                             <div class="flex-initial">
@@ -1185,6 +1188,6 @@
         </nav>
     </div>
 </div>
-<script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.js"></script>
 </body>
 </html>
