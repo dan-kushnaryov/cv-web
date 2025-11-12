@@ -35,6 +35,9 @@ jobs:
       - name: Build CSS
         run: npm run prod:build-css
 
+      - name: Optimize Images
+        run: npm run optimize-images
+
       - name: Setup Pages
         uses: actions/configure-pages@v4
 

@@ -1,6 +1,7 @@
 # compiled output
 /node_modules
 /output.css
+*.webp
 
 # Logs
 logs
